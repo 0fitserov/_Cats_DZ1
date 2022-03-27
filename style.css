@@ -1,0 +1,139 @@
+body {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 0px;
+}
+
+p, h2, h3 {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 0 5px 0 black;
+    padding: 30px calc(50% - 500px);
+}
+
+.header__logo {
+    height: 60px;
+}
+
+.header__text {
+    font-family: sans-serif;
+}
+
+footer {
+    box-shadow: 0 0 3px 0 #0006;
+    display: flex;
+    padding: 30px calc(50% - 500px);
+}
+
+.card {
+    width: 300px;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px 0 black;
+    border-radius: 10px;
+    cursor: pointer;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+.card p {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.card__img {
+    height: 150px;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .8;
+}
+
+.card:hover {
+    transform: scale(1.15, 1.15);
+    transition: 1s linear;
+    box-shadow: 0 0 6px 0 #0006, 0 0 12px 0 #0009;
+}
+
+.main{
+    display: flex;
+    padding: 30px calc(50% - 500px);
+}
+
+div.main {
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.rate img {
+    height: 10px;
+}
+
+
+.info__block {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0008;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.info__block.active {
+    display: flex;
+}
+
+.info__main {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 0 50px;
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid;
+    border-radius: 10px;
+    position: relative;
+    max-width: 1000px;
+}
+
+.info__img {
+    width: 100%;
+}
+
+.info h2 {
+    font-family: "Comic Sans MS", sans-serif;
+    margin-bottom: 30px;
+}
+.info h3 {
+    margin-bottom: 30px;
+}
+
+.info__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-image: url(img/close.png);
+    background-position: center 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
